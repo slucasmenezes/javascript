@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Projeto Javascript</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+            <h2 class="tituloTopo">Meus Pacientes</h2>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2 id="testeTitulo">Meus Pacientes</h2>
+  </div>
+
+  <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="active">
+          <th>Nome</th>
+          <th>Peso (kg)</th>
+          <th>Altura (m)</th>
+          <th>IMC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="info-nome">Mark</td>
+          <td class="info-peso" id="peso-1">85</td>
+          <td class="info-altura" id="altura-1">1,70</td>
+          <td class="info-imc" id="imc-1"></td>
+        </tr>
+        <tr>
+          <td class="info-nome">Jacob</td>
+          <td class="info-peso" id="peso-2">50</td>
+          <td class="info-altura" id="altura-2">100</td>
+          <td class="info-imc" id="imc-2"></td>
+        </tr>
+        <tr>
+          <td class="info-nome">Larry</td>
+          <td class="info-peso" id="peso-3">90</td>
+          <td class="info-altura" id="altura-3">1,97</td>
+          <td class="info-imc" id="imc-3"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary">Calcular Imcs</button>
+  </div>
+
+  <div class="container">
+    <h2>Adicionar novo paciente</h2>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nome:</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Digite o nome do paciente">
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Peso:</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite o peso do paciente">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Altura:</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite a altura do paciente">
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">Adicionar</button>
+    </form>
+  </div>
+  
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calcula-imc.js"></script>
+  </body>
+</html>
